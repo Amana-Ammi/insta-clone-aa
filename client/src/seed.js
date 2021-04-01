@@ -69,5 +69,5 @@ export function seedDatabase(firebase) {
           userLongitude: '74.0060°',
           dateCreated: Date.now()
         });
-    }
   }
+}
