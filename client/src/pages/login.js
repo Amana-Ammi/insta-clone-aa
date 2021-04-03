@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import * as ROUTES from '../constants/routes';
 
 export default function Login() {
     return (
@@ -7,6 +9,7 @@ export default function Login() {
                 <img src={require('../images/iphone-with-profile.jpg')} alt="iPhone with Instagram app" />
             </div>
             <div className="flex flex-col w-2/5">
+            <div className="flex flex-col items-center bg-white p-4 border mb-4">
                 <h1 className="flex justify-center w-full">
                     <img src={require('../images/logo.png')} alt="Instagram" className="mt-2 w-6/12 mb-4" />
                 </h1>
@@ -30,6 +33,15 @@ export default function Login() {
                         Log In
                     </button>
                 </form>
+            </div>
+                <div className="flex flex-col items-center bg-white p-4 border mb-4">
+                    <p className="text-sm">
+                        Don't have an account?{' '}
+                        <Link to={ROUTES.SIGN_UP} className="font-bold" >
+                            Sign up 
+                        </Link>
+                    </p>
+                </div>
             </div>
         </div>
     )
