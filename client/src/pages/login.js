@@ -30,12 +30,14 @@ export default function Login() {
                         className="text-sm w-full mr-3 py-5 px-4 h-2 border rounded mb-2"
                         type="text"
                         placeholder="Email Address"
+                        onChange={({ target }) => setEmailAddress(target.value)}
                     />
                     <input 
                         aria-label="Enter your password"
                         className="text-sm w-full mr-3 py-5 px-4 h-2 border rounded mb-2"
                         type="password"
                         placeholder="Password"
+                        onChange={({ target }) => setPassword(target.value)}
                     />
                     <button
                         type="submit"
